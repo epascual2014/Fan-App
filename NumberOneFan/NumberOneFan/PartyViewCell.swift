@@ -22,6 +22,21 @@ class PartyViewCell: UITableViewCell {
     func updateUI(bandInfo: BandInfo) {
         videoTitleLabel.text = bandInfo.videoTitle
         
+        // Set image from url
+        let url = URL(string: bandInfo.imageURL)!
+        
+        // bloc on a specific thread (background thread)
+        DispatchQueue.global().async {
+            do {
+                let data = try Data(contentsOf: url)
+                DispatchQueue.global().sync {
+                    self.videoPreviewImage.image = UIImage(data: data)
+                }
+            } catch {
+                
+            }
+        }
+        
     }
 
 }

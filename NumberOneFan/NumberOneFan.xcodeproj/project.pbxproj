@@ -14,6 +14,8 @@
 		61D42FC81D7B7DE800486CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D42FC61D7B7DE800486CCB /* LaunchScreen.storyboard */; };
 		61D42FD41D7B850000486CCB /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61D42FD31D7B850000486CCB /* still time.ttf */; };
 		61D42FD61D7B860A00486CCB /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D42FD51D7B860A00486CCB /* VideoVC.swift */; };
+		61D42FD81D7B904200486CCB /* PartyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D42FD71D7B904200486CCB /* PartyViewCell.swift */; };
+		61D42FDA1D7B91A600486CCB /* BandInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D42FD91D7B91A600486CCB /* BandInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		61D42FC91D7B7DE800486CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61D42FD31D7B850000486CCB /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		61D42FD51D7B860A00486CCB /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		61D42FD71D7B904200486CCB /* PartyViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyViewCell.swift; sourceTree = "<group>"; };
+		61D42FD91D7B91A600486CCB /* BandInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BandInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		61D42FCF1D7B7ED800486CCB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				61D42FD91D7B91A600486CCB /* BandInfo.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -81,6 +86,7 @@
 		61D42FD01D7B7EDC00486CCB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				61D42FD71D7B904200486CCB /* PartyViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				61D42FD61D7B860A00486CCB /* VideoVC.swift in Sources */,
+				61D42FDA1D7B91A600486CCB /* BandInfo.swift in Sources */,
+				61D42FD81D7B904200486CCB /* PartyViewCell.swift in Sources */,
 				61D42FC01D7B7DE800486CCB /* MainVC.swift in Sources */,
 				61D42FBE1D7B7DE800486CCB /* AppDelegate.swift in Sources */,
 			);

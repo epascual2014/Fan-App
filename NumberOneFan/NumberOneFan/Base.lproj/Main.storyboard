@@ -72,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="212" width="414" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="Pmu-CF-wDd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyViewCell" rowHeight="85" id="Pmu-CF-wDd" customClass="PartyViewCell" customModule="NumberOneFan" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pmu-CF-wDd" id="v6a-xF-qcr">
@@ -105,6 +105,10 @@
                                                 <constraint firstItem="nD8-Lv-J3q" firstAttribute="leading" secondItem="v6a-xF-qcr" secondAttribute="leadingMargin" id="cqr-Bj-djc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="nD8-Lv-J3q" id="bUD-xV-KwR"/>
+                                            <outlet property="videoTitleLabel" destination="ZPO-xg-lrU" id="Noq-er-WZK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -125,6 +129,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="tableView" destination="cvL-sT-tlI" id="3i8-N6-uEn"/>
                         <segue destination="pH5-fn-8pl" kind="showDetail" identifier="VideoVC" id="c9m-0C-X4z"/>
                     </connections>
                 </viewController>
